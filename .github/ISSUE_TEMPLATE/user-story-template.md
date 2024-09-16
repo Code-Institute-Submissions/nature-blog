@@ -7,6 +7,6 @@ assignees: ''
 
 ---
 
-As a **ROLE** I would like to **ACTION REQUIRED** so that I can **PERCEIVED BENEFIT**
+As a **ROLE** I can **ACTION REQUIRED** so that **PERCEIVED BENEFIT**
 
 Acceptance criteria:
