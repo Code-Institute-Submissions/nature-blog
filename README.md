@@ -57,7 +57,18 @@
  | As a **user/admin** I can **comment on posts** so that **I can take part in the conversation and be a part of the community** | Must have |
  | As a **user** I can **edit or delete my comments on a post** so that **I can be involved in the conversation and community** | Must have |
  | As a **user** I can **use my email and a password to register an account** so that **I can interact with the community and leave comments on posts** | Must have |
- | 
+ | As a **site admin** I can **moderate user comments** so that **nothing inappropriate or offensive is added to the site** | Must have |
+ | As a **user** I can **filter the blog posts based on their category** so that **see posts that match my interests** | Must have |
+ | As a **site admin** I can **create new blog posts** so that **my audience has up to date and new content to enjoy** | Must have |
+ | As a **site admin** I can **edit or delete blog posts** so that **users have the correct content and mistakes can be rectified** | Must have |
+ | As a **site admin** I can **create and assign post categories** so that **users are able to filter the blog posts for a more tailored experience** | Must have |
+ | As a **user** I can **search for blog posts using keywords** so that **get the specific information I need more quickly** | Should have |
+ | As a **user** I can **see the most recent posts in a sidebar** so that **I have access to the most recent information quickly** | Could have |
+ | As a **user** I can **share posts on social media platforms** so that **I can interact with other users and a wider community** | Could have |
+ | As a **user** I can **view a separate page showing activities available to book** so that **I can interact with nature and learn more** | Won't have |
+ | As a **user** I can **navigate to a separate gallery page** so that **I can enjoy more content in an enjoyable way**
+ | Won't have |
+
 
 		 
 
