@@ -11,7 +11,7 @@
 
 > [View live project here](https://helproudman.github.io/weather/)
 > 
-> This is a simple weather application which allows users to search for their location and displays the current day and the forecast for the subsequent four days.
+> This is a nature blog which allows users to interact with the posts and make comments so that they can feel a part of a wider community and feel they are playing a part in helping nature.
 ---
 > 
 ![responsivity image](readme-docs/responsive.png)
