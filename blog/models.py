@@ -16,6 +16,14 @@ class Post(models.Model):
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
 
+# meta class added to order the blog posts according to when they were created
+    class Meta:
+        ordering = ["created_on", "author"]
+
+# method added to make the appearance of the posts in admin more readable    
+    def __str__(self):
+        return f"Title:{self.title} | written by: {self.author}"    
+
 
 # Comment model
 class Comment(models.Model):
@@ -24,3 +32,11 @@ class Comment(models.Model):
     body = models.TextField(max_length=200)
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)    
+
+# meta class added to order the comments by date created
+    class Meta:
+        ordering = ["created_on", "author"]
+
+# method added to make the appearance more readable in admin
+    def __str__(self):
+        return f"Comment: {self.body} by {self.author}"            

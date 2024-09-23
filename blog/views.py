@@ -1,5 +1,8 @@
 from django.shortcuts import render
+from django.views import generic
 from django.views.generic import TemplateView
+from .models import Post
+
 
 class HomePage(TemplateView):
     """
@@ -8,3 +11,8 @@ class HomePage(TemplateView):
     template_name = 'index.html'
 
 # Create your views here.
+
+# class based view to display the posts
+class PostList(generic.ListView):
+    queryset = Post.objects.all()
+    template_name = "post_list.html"
