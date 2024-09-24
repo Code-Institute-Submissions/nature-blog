@@ -4,11 +4,11 @@ from django.views.generic import TemplateView
 from .models import Post
 
 
-class HomePage(TemplateView):
-    """
-    Displays home page
-    """
-    template_name = 'index.html'
+# class HomePage(TemplateView):
+#     """
+#     Displays home page
+#     """
+#     template_name = 'index.html'
 
 # Create your views here.
 
