@@ -1,5 +1,6 @@
 {% extends 'nature.html' %} {% block content %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 <div class="masthead">
     <div class="container">
@@ -63,6 +64,22 @@
                 {% endfor %}
             </div>
         </div>
+        <!-- creating new comments -->
+         <div class="col-md-4 card mb-4 mt-3">
+            <div class="card-body">
+                {% if user.is_authenticated %}
+                <h3>Something to say? Leave a comment:</h3>
+                <p>Posting as: {{ user.username }}</p>
+                <form method="post" id="commentForm" style="margin-top: 1.3em;">
+                    {{ comment_form | crispy }}
+                    {% csrf_token %}
+                    <button class="btn btn-signup btn-lg">Submit</button>
+                </form>
+                {% else %}
+                <p>Please log in to leave a comment</p>
+                {% endif %}
+            </div>
+         </div>
         
     </div>
 </div>
