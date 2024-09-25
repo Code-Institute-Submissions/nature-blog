@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
@@ -49,8 +49,10 @@ def post_detail(request, slug):
         "comment_count": comment_count,
         "comment_form": comment_form,
         },
-        )    
-# view to allow users to edit and delete their comments
+        )  
+
+
+# view to allow users to edit their comments
 def comment_edit(request, slug, comment_id):
     """
     view to edit comments
