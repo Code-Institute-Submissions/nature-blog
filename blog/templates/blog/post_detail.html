@@ -59,6 +59,10 @@
                     {% if not comment.approved and comment.author == user %}
                     <p class="approval">This comment is awaiting approval</p>
                     {% endif %}
+                    {% if user.is_authenticated and comment.author == user %}
+                    <button class="btn btn-edit" comment_id="{{ comment_id }}">Edit</button>
+
+                    {% endif %}
 
                 </div>
                 {% endfor %}
@@ -68,7 +72,7 @@
          <div class="col-md-4 card mb-4 mt-3">
             <div class="card-body">
                 {% if user.is_authenticated %}
-                <h3>Something to say? Leave a comment:</h3>
+                <h3>Want to get involved? Please leave a comment:</h3>
                 <p>Posting as: {{ user.username }}</p>
                 <form method="post" id="commentForm" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
@@ -85,3 +89,9 @@
 </div>
 
 {% endblock content %}
+
+<!-- import comments.js -->
+{% block extras %}
+<script src="{% static 'js/comments.js %}"></script>
+
+{% endblock %}
