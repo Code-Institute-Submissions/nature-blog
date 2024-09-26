@@ -6,12 +6,20 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here.
 
+# category model
+class Category(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
+
 
 class Post(models.Model):
     """
     Stores a single blog post entry related to :model:`auth.User`.
     """
     title = models.CharField(max_length=200, unique=True)
+    category = models.ForeignKey(Category, on_delete=models.PROTECT, default=1, related_name="blog_category")
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts")
     featured_image = CloudinaryField('image', default='placeholder')
@@ -48,4 +56,6 @@ class Comment(models.Model):
 
 # method added to make the appearance more readable in admin
     def __str__(self):
-        return f"Comment: {self.body} by {self.author}"            
+        return f"Comment: {self.body} by {self.author}"     
+
+
