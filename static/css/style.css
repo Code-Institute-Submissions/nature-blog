@@ -9,8 +9,8 @@ body {
     color: #4A4A4F;
 }
 
-.red-o {
-    color: #E84610;
+.navbar {
+    background-color: #F27405;
 }
 
 .thin {
@@ -45,7 +45,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #188181;
+    background-color: #265902;
 }
 
 .scale {
@@ -95,12 +95,12 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #F27405;
+    color: #265902;
 }
 
 .post-link:hover,
 .page-link {
-    color: #265902;
+    color: #F27405;
 }
 
 .post-title {
@@ -121,8 +121,8 @@ body {
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+    background-color: #265902;
+    color: #F27405;
 }
 
 .link {
@@ -132,7 +132,7 @@ body {
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: #F27405;
     text-decoration: underline;
 }
 
@@ -163,5 +163,5 @@ body {
 }
 
 .fas {
-    color: #265902;
+    color: #F27405;
 }
