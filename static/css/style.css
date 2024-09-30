@@ -95,12 +95,12 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #55A603;
+    color: #F27405;
 }
 
 .post-link:hover,
 .page-link {
-    color: #55A603;
+    color: #265902;
 }
 
 .post-title {
@@ -159,9 +159,9 @@ body {
 }
 
 .approval {
-    color: rgb(19, 226, 64);
+    color: #265902;
 }
 
 .fas {
-    color: #55A603;
+    color: #265902;
 }
