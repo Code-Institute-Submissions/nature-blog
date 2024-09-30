@@ -32,7 +32,9 @@ body {
 .card {
     border: none;
     background-color: transparent;
+    
 }
+
 
 .image-container {
     position: relative;
@@ -93,12 +95,12 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #55A603;
 }
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #55A603;
 }
 
 .post-title {
@@ -153,9 +155,13 @@ body {
 }
 
 .faded {
-    color: rgb(172, 175, 175);
+    color: rgb(10, 155, 227);
 }
 
 .approval {
-    color: rgb(222, 146, 168);
+    color: rgb(19, 226, 64);
+}
+
+.fas {
+    color: #55A603;
 }
