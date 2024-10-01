@@ -50,7 +50,8 @@ body {
 
 .scale {
     width: 100%;
-    height: auto;
+    height: 100%;
+    /* height: auto; */
 }
 
 .author {
@@ -113,6 +114,10 @@ body {
     color: lightgray;
 }
 
+.post-category {
+    margin-left: 5%;
+}
+
 .btn-signup,
 .btn-edit {
     background-color: #188181;
@@ -163,5 +168,33 @@ body {
 }
 
 .fas {
-    color: #F27405;
+    color: #265902;
+    font-size: 30px;
+}
+
+.footer {
+    background-color: #F27405;
+}
+
+#logged-in-message {
+    background-color: #265902;
+    color: #F9FAFC;
+    max-width: 200px;
+}
+
+#login-message {
+    background-color: #F20505;
+    color: #F9FAFC;
+    max-width: 200px;
+}
+
+#nav-paragraph {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #445261;
+    text-decoration: underline;
 }
