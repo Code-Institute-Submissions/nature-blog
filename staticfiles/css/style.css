@@ -83,7 +83,7 @@ article {
 
 .masthead-image {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .masthead-image:after {
@@ -191,7 +191,7 @@ article {
 #login-message {
     background-color: #F20505;
     color: #F9FAFC;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 #nav-paragraph {
