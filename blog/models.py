@@ -8,6 +8,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 # category model
 class Category(models.Model):
+    
     name = models.CharField(max_length=100)
 
     class Meta:
