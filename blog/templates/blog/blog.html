@@ -16,7 +16,7 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img src="{% static 'images/rose.jpeg' %}" alt="placeholder image" class="card-img-top">
+                                <img src="{% static 'images/rose.png' %}" alt="placeholder image" class="card-img-top">
                                 {% else %}
                                 <img src=" {{ post.featured_image.url }}" alt="{{ post.title }}" class="card-img-top">
                                 {% endif %}

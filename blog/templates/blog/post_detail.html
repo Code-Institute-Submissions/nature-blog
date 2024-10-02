@@ -57,6 +57,7 @@
                     <div id="comment{{ comment.id }}">
                         {{ comment.body | linebreaks }}
                     </div>
+                    <!-- checking for user authentication to give access to edit/delete functionality -->
                     {% if not comment.approved and comment.author == user %}
                     <p class="approval">This comment is awaiting approval</p>
                     {% endif %}
