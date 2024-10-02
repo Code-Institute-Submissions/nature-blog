@@ -18,7 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Reenie+Beanie&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -47,31 +48,31 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-white{% if request.path == home_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'home' %}">Home</a>
+                        <a class="nav-link text-white{% if request.path == home_url %}active"
+                            aria-current="page{% endif %}" href="{% url 'home' %}">Home</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link text-white{% if request.path == logout_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link text-white{% if request.path == logout_url %}active"
+                            aria-current="page{% endif %}" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link text-white{% if request.path == signup_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'account_signup' %}">Register</a>
+                        <a class="nav-link text-white{% if request.path == signup_url %}active"
+                            aria-current="page{% endif %}" href="{% url 'account_signup' %}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white{% if request.path == login_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link text-white{% if request.path == login_url %}active"
+                            aria-current="page{% endif %}" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
 
                 </ul>
                 <i class="fas fa-leaf"></i>
                 <span class="navbar-text text-body">
-                    
+
                     <p class="text-white" id="nav-paragraph">Amazing nature on my doorstep</p>
-                    
+
                 </span>
                 <i class="fas fa-frog"></i>
             </div>
@@ -90,14 +91,33 @@
             </div>
         </div>
     </div>
-
+    <!-- displays a message telling user if they are logged in ad inviting to login/register if not-->
     <main class="flex-shrink-0 main-bg">
         {% if user.is_authenticated %}
-        <p class="text-end m-3" id="logged-in-message">Welcome {{ user }} you are logged in</p>
+        <p class="m-3" id="logged-in-message">Welcome {{ user }} you are logged in</p>
         {% else %}
-        <p class="text-end m-3" id="login-message">You are not currently logged in, please log in or register and get
+        <p class="m-3" id="login-message">You are not currently logged in, please log in or register and get
             involved</p>
         {% endif %}
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 mt-3 text-center">
+                        <p class="blog-intro">
+                            <hr>
+                            Welcome to my blog and thanks for taking the time to drop by.
+                            <br>
+                            If you like the posts and have something to say then it would be amazing if you got involved
+                            and added a comment.
+                            <br>
+                            Let me know what projects you are doing in your own wild space, no matter what the size.
+                            <br>
+                            Anything we can do to help nature makes a difference so keep going.
+                            <hr>
+                    </div>
+                </div>
+            </div>
+        </header>
 
         {% block content %}
         <!-- Content Goes here -->

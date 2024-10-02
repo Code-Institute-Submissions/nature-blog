@@ -18,6 +18,14 @@ body {
     color: #265902;
     font-size: 30px;
 }
+/* header styles */
+
+.blog-intro {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
 
 /* blog.html styles */
 .main-bg {
