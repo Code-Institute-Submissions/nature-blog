@@ -6,12 +6,14 @@
 
 # Nature blog
 
-![Nature on your doorstep](readme-docs/weather.png)
+![Nature on your doorstep](readme-docs/home-page.png)
 
 
-> [View live project here](https://helproudman.github.io/weather/)
+> [View live project here](https://nature-blog-5d97cb035a15.herokuapp.com/)
+
+For Admin access with relevant sign-in information: [Nature blog Admin](https://nature-blog-5d97cb035a15.herokuapp.com/admin/)
 > 
-> This is a nature blog which allows users to interact with the posts and make comments so that they can feel a part of a wider community and feel they are playing a part in helping nature.
+> This is my nature blog which allows me to create blog posts about the wildlife in my garden which users can read and comment on so that they can share their thoughts and ideas and feel part of a wider community helping nature to thrive.
 ---
 > 
 ![responsivity image](readme-docs/responsive.png)
@@ -260,12 +262,33 @@ The site was deployed via GitHub using the following steps:
  ---
 
 ## TESTING
-  The W3C Markup Validator,  W3C CSS Validator Services and JSHint were used to validate all pages of the code to ensure there were no syntax errors.
-    
-  - [W3C Markup Validator](https://validator.w3.org/) - [HTML validation](readme-docs/html-validated.png)
-  - [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) - [CSS validation](readme-docs/css-validated.png)
 
-  - [JavaScript Validator](https://jshint.com) - the JavaScript validation did not throw up and issues. The fact that the use of let and const to define variables and template literals is only available with ES6 was highlighted.
+  ### HTML validation
+
+I have used the W3C Markup validator to validate all of my HTML code - [W3C Markup Validator](https://validator.w3.org/)
+
+A different approach was required for validating the HTML for this project as all of the pages are developed using DTL and most require user authentication. The HTML validator will throw errors if I were to use the URL so I have had to follow the below approach for every page:
+  - navigate to the deployed Heroku link
+  - right click to find the 'view page source' link
+  - copy and paste the HTML code from here into the validator via the direct input
+
+[home page html validation](readme.docs/home-page-html.png)
+
+All HTML was checked and had no errors or warnings to show as indicated above. 
+The home page had an initial error where I had nested a <p> within a <span> but I corrected this and commited the code and the validation was clear.
+
+   ### CSS validation
+
+[CSS validation](readme.docs/css-validation.png)
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS file. External CSS for Bootstrap, provided by [CDN](https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css) was not tested.
+
+   ### Javascript validation
+
+  [JavaScript Validator](https://jshint.com) - the JavaScript validation did not throw up and issues. The fact that the use of let and const to define variables and template literals is only available with ES6 was highlighted.
+
+   ### Python validation
+[CI Python Linter](https://pep8ci.herokuapp.com/#) was used to validate the python files I created or edited myself.
+Initial errors were thrown up involving line length of comments and spacing but these were corrected.    
 
 ### Further Testing
   - The website was tested on Google Chrome, Safari, Firefox and Microsoft Edge and performance was good across all platforms.
