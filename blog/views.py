@@ -78,14 +78,16 @@ def post_detail(request, slug):
 
     comment_form = CommentForm()
 
-    return render(request, "blog/post_detail.html",
-          {
+    return render(
+        request,
+        "blog/post_detail.html",
+        {
           "post": post,
           "comments": comments,
           "comment_count": comment_count,
           "comment_form": comment_form,
-          },
-        )
+        },
+    )
 
 
 # view to allow users to edit their comments
