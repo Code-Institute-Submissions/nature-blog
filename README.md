@@ -5,8 +5,8 @@
 > 
 
 # Nature blog
+![Nature on my doorstep](https://github.com/user-attachments/assets/3b5f2d10-8103-4d8a-9c39-f8ce6608fd0f)
 
-![Nature on your doorstep](readme-docs/home-page.png)
 
 
 > [View live project here](https://nature-blog-5d97cb035a15.herokuapp.com/)
@@ -107,12 +107,22 @@ For Admin access with relevant sign-in information: [Nature blog Admin](https://
   - **Typography**
     
     The Arial font was chosen as it is clear and easy to read to aid with accessibility and keep the site simple. Helvetica was chosen as a back up for the same reasons
-  - **Colour scheme**
+    The Gloria Hallelujah font was chosen for the blog introduction and the blog entries themselves as it resembles handwritten text and I felt it would lend a more personal touch to the blog. I wanted it to feel as though the user was reading my diary entries directly.
     
-    The colour scheme was chosen to contrast and enhance the background image. Tthe font colour was chosen using the colour picker available on Apple mac to find the RGB values which were then put into [Contrast finder](https://app.contrast-finder.org/?lang=en) to ensure good contrast between background and text. The colour of the footer was chosen to match the colour of the background image in a similar way.
+  - **Colour scheme**
+  - 
+![colour-scheme](https://github.com/user-attachments/assets/00aa9746-14ed-425e-979c-1dee50ba4843)
+
+        
+    As the blog is about nature and wildlife I wanted the colour scheme to reflect the colours I have in my garden. I wanted strong, primary colours for impact as they would be against a white background, but didn't want a large palette as I 
+    included lots of images of wildlife that I didn't want to detract from. 
+    The palette was chosen using [Coolers](https://coolors.co/)
+    
   - **Imagery**
     
-    The image chosen for the background for the site was intended to draw users in and make a statement. [Pexels](https://www.pexels.com/) was used to provide the royalty-free stock image. Acknowledgements for the individual photographers are in the [credits](#credits) section.
+    The majority of the images used in each blog post are my own images taken of my garden and I was really proud to be able to use them. I had a lot of fun creating posts and uploading images. Seeing the finished article on the screen gave 
+    me enormous pleasure despite the fact that the load time for my site was compromised.
+    Two of the images were royalty-free stock images from [Pexels](https://www.pexels.com/) Acknowledgements for the individual photographers are in the [credits](#credits) section.
  
 
 
@@ -128,8 +138,9 @@ For Admin access with relevant sign-in information: [Nature blog Admin](https://
   **MAIN VIEW**
   <details open>
   <summary>landing page</summary
-    
-  ![landing page](readme-docs/weather.png)
+  ![home-page](https://github.com/user-attachments/assets/72eefb0f-81d3-41d5-b856-bfa8198ccf6b)
+
+
   </details>
   The landing page appears the same on all devices
 
@@ -188,6 +199,8 @@ The following would be options to consider including in future versions of the w
 
   - JavaScript
 
+  - Python
+
   ### Frameworks, libraries and programs used
 
    
@@ -245,18 +258,25 @@ The following would be options to consider including in future versions of the w
  ---
 
 ## DEPLOYMENT
-The site was deployed via GitHub using the following steps:
-1. Log in to GitHub account
-2. Go to the Settings tab of the vivalasvegas repository
-3. On the left-hand sidebar, in the Code and automation section, select Pages
-4. Make sure:
-    - Source is set to 'Deploy from Branch'.
-    - Main branch is selected.
-    - Folder is set to / (root).
-5. Under Branch, click Save.
-6. Go back to the Code tab. Wait a few minutes for the build to finish and refresh the repository.
-7. On the right-hand side, in the Environments section, click on 'github-pages'.
-8. Click View deployment to see the live site    
+The site was deployed to Heroku. The steps to deploy are as follows:
+ - Install the gunicorn python package and create a file called 'Procfile' in the repo's root directory
+ - In the Procfile write 'web: gunicorn lunar_lists.wsgi'
+ - In settings.py add ".herokuapp.com" to the ALLOWED_HOSTS list
+ - In settings.py add 'https://*.herokuapp.com' to CSRF_TRUSTED_ORIGINS list, git add, commit and push to github
+
+Navigate to the Heroku dashboard
+ - Create a new Heroku app
+ - Give it a name and select the region 'Europe'
+Navigate to settings tab and scroll down to Config Vars
+ - Click 'Reveal Config Vars'
+ - Add the following keys:
+         key = DATABASE_URL | value = (my secret database url)
+         key = SECRET_KEY | value = (my secret key)
+Navigate to Deploy tab
+ - Connect to GitHub and select the repo 'lunar-lists'
+ - Scroll down to 'Manual deploy' and select the 'main' branch
+ - Click 'Deploy Branch'
+   
 
 
  ---
@@ -290,34 +310,18 @@ The home page had an initial error where I had nested a <p> within a <span> but 
 [CI Python Linter](https://pep8ci.herokuapp.com/#) was used to validate the python files I created or edited myself.
 Initial errors were thrown up involving line length of comments and spacing but these were corrected.    
 
-### Further Testing
-  - The website was tested on Google Chrome, Safari, Firefox and Microsoft Edge and performance was good across all platforms.
-  - The website was viewed on a variety of screen sizes such as Desktop, Laptop, iPad Air, iPhone8.
-
-  Each feature was tested with the following results:
-
-  | Feature | Test | Pass/fail |
-  | ---| ---| ---|
-  | Search field | modal deploys if no entry on clicking submit | Pass |
-  | Search field| search button | Pass |
-  | Forecast | Displays when search button clicked | Pass |
-  | Social links| Facebook - hover | Pass|
-  | Social links | Facebook - opens in new tab | Pass |
-  | Social links | GitHub - hover | Pass |
-  | Social links | GitHub - opens in new tab | Pass |
-  | Social links | Instagram - hover | Pass |
-  | Social links | Instagram - opens in new tab | Pass |
   
 
 ## Lighthouse scores via Chrome dev tools 
+![lighthouse](https://github.com/user-attachments/assets/ad97e67e-3d28-4c94-a847-d2c011aeac67)
 
-![Lighthouse scores](readme-docs/lighthouse-test.png)
   
 
 ### Accessibility     
 
-The site was tested via WAVE the web accessibility evaluation tool and showed some alerts for contrast between the text and the background image. The colour of the text was changed and checked via [Contrast Finder](https://app.contrast-finder.org/?lang=en) which showed excellent contrast. The font size of the text was enlarged to help with the issue however after these changes the alerts still existed when evaluated on WAVE again. 
-There was not enough time to correct this issue but it will be looked at in future updates
+The site was tested via WAVE the web accessibility evaluation tool and showed some alerts for contrast between the text and the background colour.
+The first was for the message warning a user they are not logged in, which had white text against a bright red. The colour of the background was muted and checked via [Contrast Finder](https://app.contrast-finder.org/?lang=en) which showed excellent contrast. 
+There was also a contrast issue between the white text and the orange background in the navbar and footer but I felt this was not enough of an issue to change the appearance and style of the whole site.
 
 
 <br>
