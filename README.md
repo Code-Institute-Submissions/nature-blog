@@ -17,7 +17,9 @@ For Admin access with relevant sign-in information: [Nature blog Admin](https://
 > Users can read and comment on each post that they can share their thoughts and ideas and feel part of a wider community helping nature to thrive.
 ---
 > 
-![responsivity image](readme-docs/responsive.png)
+<img width="937" alt="Screenshot 2024-10-04 at 10 42 39" src="https://github.com/user-attachments/assets/87d34c2d-0bd4-432c-8575-04ed47dc3f52">
+
+
 >
 ---
 
@@ -233,6 +235,8 @@ The following would be options to consider including in future versions of the w
 
   - Python
 
+  - Django  
+
   ### Frameworks, libraries and programs used
 
    
@@ -362,11 +366,17 @@ There was also a contrast issue between the white text and the orange background
 
 
 ### Issues/Bugs
+  - The readme text is all there when you look at the code but the preview will only show down to a certain level....I assume this is to do with the fact that I started 
+    editing it in gitpod then realised it was much easier via the github repository. I don;t have the time to be able to sort it out now so apologies
+  - On the blog post detail page the image is only showing the top part
+  - The images on the main page are very large and not a uniform shape....I decided I like being able to see the full image rather than limiting how much to see and I like
+    the fact that everything isn't uniform but that might just be me!
+ - there are too many to list in all honesty but I didn't have the ability or confidence to be able to sort everything out in this version of the project...hopefully I 
+   will have more luck with a resubmission...I will be less stressed  and have time to learn Django more
 
- 
 
-
-
+### Agile Process
+I made an attemtpt to follow an agile process. I had a project board in github which I updated with my user stories. Each user story was labelled according to MoSCoW prioritisation and had acceptance criteria. If I'm honest I didn't then keep the board up to date as I should have as I was so focused on the minutiae of the project and the stress of not thinking I would be able to actually produce anything that the board was the last priority. I have updated it since drawing a line under my development for now and many of the user stories have been moved into the finished section. There are several still in the backlog which have been added to my future features.
 
 
 
@@ -383,7 +393,7 @@ There was also a contrast issue between the white text and the orange background
   - [Stack Overflow](https://stackoverflow.com/) was used for syntax and coding queries
   
 **Media**
-  - All images were taken from [Pexels](https://www.pexels.com/). Credit to the individual artists: Brett Sayles
+  - All images not my own were taken from [Pexels](https://www.pexels.com/). Credit to the individual artists: Graeme Travers for Damselfly and Mark A Jenkins for Blue Tit 
   - [Amiresponsive](https://ui.dev/amiresponsive) for the responsivity mockup on the README.
 
   - the favicon was downloaded from [Flaticon](https://flaticon.com) with credit to the creator iconixar.
