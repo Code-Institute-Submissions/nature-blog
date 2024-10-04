@@ -438,4 +438,5 @@ I have learned a lot for the future about planning and a large part of that is u
   - Mark Briscoe (SME with Code Institute) - For providing technical knowledge and support with coding and GitHub/GitPod and being constantly 
     encouraging and positive
   - John Rearden (Coding coach with Code Institute) - for amazing coding expertise and calm advice
-  - Ruairidh MacArthur (Coding coach with Code Institute) - for amazing coding expertise and calm advice 
+  - Ruairidh MacArthur (Coding coach with Code Institute) - for amazing coding expertise and calm advice
+  - my amazing cohort for the support and laughs and encouragement - particularly Alex Curnow for making me stay every time I was determined to quit
