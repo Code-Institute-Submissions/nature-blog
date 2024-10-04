@@ -115,6 +115,7 @@ This user story also contributed towards the CRUD functionality and was tested t
 ## CREATION PROCESS
 
   ### Wireframes
+  I only created wire frames for the pages I intended to create myself. All login and registration forms were created by allauth and as such I haven't provided wire frames.
 <details open>
 <summary>Blog page wireframes for mobile and desktop</summary>
 <img width="1080" alt="Blog page mobile and large screen" src="https://github.com/user-attachments/assets/7bf359f9-8291-4d1d-a806-482b8ea5c93e">
