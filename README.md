@@ -114,22 +114,19 @@ This user story also contributed towards the CRUD functionality and was tested t
 
   ### Wireframes
 <details open>
-<summary>Mobile Wireframe</summary>
+<summary>Blog page wireframes for mobile and desktop</summary>
+<img width="1080" alt="Blog page mobile and large screen" src="https://github.com/user-attachments/assets/7bf359f9-8291-4d1d-a806-482b8ea5c93e">
 
-  ![Mobile](readme-docs/mobile.png)
+  
 </details>
 
 <details>
-<summary>Tablet Wireframe</summary>
+<summary>Blog detail wireframes for mobile and desktop</summary>
 
-  ![Mobile](readme-docs/tablet.png)
+  <img width="1080" alt="blog post detail" src="https://github.com/user-attachments/assets/9f94cd74-4afe-4984-8455-f962e58bd48b">
+
 </details>
 
-<details>
-<summary>Desktop Wireframe</summary>
-
-  ![Mobile](readme-docs/desktop.png)
-</details>
 
 
 ---
