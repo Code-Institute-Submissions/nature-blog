@@ -347,7 +347,7 @@ Initial errors were thrown up involving line length of comments and spacing but 
 ## Lighthouse scores via Chrome dev tools 
 ![lighthouse](https://github.com/user-attachments/assets/ad97e67e-3d28-4c94-a847-d2c011aeac67)
 
-The performance score is low due to the amount of images used but all the images have been compressed and converted into png format.
+The performance score is low due to the amount of images used but all the images have been compressed.
 
   
 
@@ -363,16 +363,7 @@ There was also a contrast issue between the white text and the orange background
 
 ### Issues/Bugs
 
- - The icons were coded to load using a URL updated with a variable and a template literal but were not loading initially despite showing up when the link was hardwired in and the link being checked externally. The icons were added into a folder rather than being accessed via the API website but the issue remained.
- This remained an issue for a couple of days and advice was sought from Mark Briscoe who solved the issue by changing the way in which the src attribute in the HTML element was altered. 
-
-  - the link to the JS file was added incorrectly to begin with
-
-  - When the favicon was added the weather icons did not display on the deployed site...the script for font awesome had been added in the wrong place.
-
-  - no reset button/facility was added in error and this was only noticed very late in the development - code was added to correct this but I ran out of time to be able to make it work
-
-  - the location name was displaying as typed in the search box so ususally with a lowercase first letter - a line was added to the function to correct this
+ 
 
 
 
