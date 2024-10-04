@@ -136,9 +136,11 @@ This user story also contributed towards the CRUD functionality and was tested t
 ## DESIGN
   - **Typography**
     
-    [Google Fonts](https://fonts.google.com/) was used to choose the font used. I had the idea that I wanted two fonts to differentiate the general site text from the personal blog text so the following font was imported:
+    [Google Fonts](https://fonts.google.com/) was used to choose the font used. I had the idea that I wanted two fonts to 
+   differentiate the general site text from the personal blog text so the following font was imported:
     
-    The Gloria Hallelujah font was chosen for the blog introduction and the blog entries themselves as it resembles handwritten text and I felt it would lend a more personal touch to the blog. I wanted it to feel as though the user was 
+    The Gloria Hallelujah font was chosen for the blog introduction and the blog entries themselves as it resembles 
+    handwritten text and I felt it would lend a more personal touch to the blog. I wanted it to feel as though the user was 
     reading my diary entries directly.
     
   - **Colour scheme**
@@ -146,15 +148,18 @@ This user story also contributed towards the CRUD functionality and was tested t
   ![colour-scheme](https://github.com/user-attachments/assets/00aa9746-14ed-425e-979c-1dee50ba4843)
 
         
-    As the blog is about nature and wildlife I wanted the colour scheme to reflect the colours I have in my garden. I wanted strong, primary colours for impact as they would be against a white background, but didn't want a large palette as I 
+    As the blog is about nature and wildlife I wanted the colour scheme to reflect the colours I have in my garden. I wanted 
+    strong, primary colours for impact as they would be against a white background, but didn't want a large palette as I 
     included lots of images of wildlife that I didn't want to detract from. 
     The palette was chosen using [Coolers](https://coolors.co/)
     
   - **Imagery**
     
-    The majority of the images used in each blog post are my own images taken of my garden and I was really proud to be able to use them. I had a lot of fun creating posts and uploading images. Seeing the finished article on the screen gave 
+    The majority of the images used in each blog post are my own images taken of my garden and I was really proud to be able 
+    to use them. I had a lot of fun creating posts and uploading images. Seeing the finished article on the screen gave 
     me enormous pleasure despite the fact that the load time for my site was compromised.
-    Two of the images were royalty-free stock images from [Pexels](https://www.pexels.com/) Acknowledgements for the individual photographers are in the [credits](#credits) section.
+    Two of the images were royalty-free stock images from [Pexels](https://www.pexels.com/) Acknowledgements for the 
+    individual photographers are in the [credits](#credits) section.
  
 
 
@@ -195,15 +200,19 @@ This user story also contributed towards the CRUD functionality and was tested t
 
 	  
   </details>
-  Each blog post gives the user the option to add comments. They can also edit/delete commemts they have previously made. The comments then appear colour coded so that the user can tell which have been approved by admin.
+  Each blog post gives the user the option to add comments. They can also edit/delete commemts they have previously made. The 
+ comments then appear colour coded so that the user can tell which have been approved by admin.
+
 
   **SOCIAL LINKS FEATURE**
-  <details>
-  <summary>Social links image</summary
-    ![footer](https://github.com/user-attachments/assets/57a79318-bd2f-423e-b015-3f59dea69dce)
 
-  </details>
-  The footer gives links to social sites and GitHub. The colour was chosen to match the header and fit in with the overall colour scheme.
+
+ ![footer](https://github.com/user-attachments/assets/57a79318-bd2f-423e-b015-3f59dea69dce)
+
+
+
+  The footer gives links to social sites and GitHub. The colour was chosen to match the header and fit in with the overall 
+  colour scheme.
 
 
 
@@ -234,8 +243,24 @@ The following would be options to consider including in future versions of the w
   - JavaScript
 
   - Python
+   - asgiref==3.8.1
+   - cloudinary==1.41.0
+   - dj-database-url==0.5.0
+   - gunicorn==20.1.0
+   - oauthlib==3.2.2
+   - psycopg==3.2.1
+   - PyJWT==2.9.0
+   - python3-openid==3.2.0
+   - requests-oauthlib==2.0.0
+   - sqlparse==0.5.1
+   - urllib3==1.26.19
+   - whitenoise==5.3.0
+     
 
-  - Django  
+  - Django
+    - summernote==0.8.20.0
+    - allauth==0.57.2
+    - crispy-forms==2.3
 
   ### Frameworks, libraries and programs used
 
@@ -258,7 +283,7 @@ The following would be options to consider including in future versions of the w
         - Used to troubleshoot and test design ideas and styling.   
   9.  [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)  
         - used to test performance of the website
-  10. [Favicon](https://favicon.io/#google_vignette)
+  10. [Favicon](https://favicon.io/)
         - used to generate the favicon  
   11. [W3 Schools](https://www.w3schools.com/)
         - used to look up syntax for HTML and CSS
@@ -268,7 +293,7 @@ The following would be options to consider including in future versions of the w
         - used to provide sources to generate text for the website   
   14. [Wikipedia](https://www.wikipedia.org/)      
         - used to generate text
-  15. [Open Weathermap API](https://openweathermap.org/guide)
+  15. [Wave web accessibility evaluation tool](https://wave.webaim.org/)
         - used to supply the weather API
   16. [Font Awesome](https://fontawesome.com/)    
         - used for the favicon
@@ -280,14 +305,21 @@ The following would be options to consider including in future versions of the w
         - used to validate the CSS
   20. [JSHint](https://jshint.com/)
         - used to validate the JavaScrip
-  21. [Rapid API guides](https://rapidapi.com/guides/)
-        - used for advice on using an API
+  21. [Python Enhancement Proposals](https://peps.python.org/pep-0008/)
+        - for advice on PEP8 compliance
   22. [Free Code Camp](https://freecodecamp.org)   
         - for help with JavaScript concepts and syntax 
   23. [Code Academy](https://codeacademy.com)   
         - for help with JavaScript concepts and syntax  
   24. [Code explained repository on GitHub](https://github.com/CodeExplainedRepo/Weather-App-JavaScript)
-        - for help setting up a weather app using an API             
+        - for help setting up a weather app using an API
+  25. [Claude AI](https://claude.ai/)
+         - for help with code queries
+  26. [Adobe Color](https://color.adobe.com/create/color-wheel)
+        
+  28. [Django framework](https://www.djangoproject.com/)
+  29. [Django Project - Build a simple blog tutorial](https://www.youtube.com/watch?v=S9-Bt1JgRjQ&list=PLOLrQ9Pn6cawWd-5UZM6CIm0uqFXeBcTd&index=5)
+  30. [CI Python Linter](https://pep8ci.herokuapp.com/) - for validating Python code
 
 
 
@@ -366,17 +398,17 @@ There was also a contrast issue between the white text and the orange background
 
 
 ### Issues/Bugs
-  - The readme text is all there when you look at the code but the preview will only show down to a certain level....I assume this is to do with the fact that I started 
-    editing it in gitpod then realised it was much easier via the github repository. I don;t have the time to be able to sort it out now so apologies
+  
   - On the blog post detail page the image is only showing the top part
   - The images on the main page are very large and not a uniform shape....I decided I like being able to see the full image rather than limiting how much to see and I like
     the fact that everything isn't uniform but that might just be me!
- - there are too many to list in all honesty but I didn't have the ability or confidence to be able to sort everything out in this version of the project...hopefully I 
+ - there are too many to list in all honesty, so apologies, but I didn't have the ability or confidence to be able to sort everything out in this version of the project...hopefully I 
    will have more luck with a resubmission...I will be less stressed  and have time to learn Django more
 
 
 ### Agile Process
 I made an attemtpt to follow an agile process. I had a project board in github which I updated with my user stories. Each user story was labelled according to MoSCoW prioritisation and had acceptance criteria. If I'm honest I didn't then keep the board up to date as I should have as I was so focused on the minutiae of the project and the stress of not thinking I would be able to actually produce anything that the board was the last priority. I have updated it since drawing a line under my development for now and many of the user stories have been moved into the finished section. There are several still in the backlog which have been added to my future features.
+I have learned a lot for the future about planning and a large part of that is using the project board more and following an agile process more closely to keep myself on track.
 
 
 
@@ -387,8 +419,8 @@ I made an attemtpt to follow an agile process. I had a project board in github w
    was used to help write the README.md
   - [Code Institute Sample README](https://github.com/Code-Institute-Solutions/SampleREADME)
   was used as a reference when writing the README.
-  - [Code explained repository](https://github.com/CodeExplainedRepo/Weather-App-JavaScript) was used to give a tutorial for using a weather API
-  - [Code Institute](https://learn.codeinstitute.net/) was used for extra reference for HTML and CSS
+  - [Django project - build a simple blog](https://www.youtube.com/watch?v=S9-Bt1JgRjQ&list=PLOLrQ9Pn6cawWd-5UZM6CIm0uqFXeBcTd&index=5) was used to give a tutorial for setting up a blog app in Django and adding a category model
+  - [Code Institute](https://learn.codeinstitute.net/) was used for extra reference for HTML, CSS, Python and Django
   - [W3 Schools](https://www.w3schools.com/) was used for reference on syntax
   - [Stack Overflow](https://stackoverflow.com/) was used for syntax and coding queries
   
@@ -396,10 +428,13 @@ I made an attemtpt to follow an agile process. I had a project board in github w
   - All images not my own were taken from [Pexels](https://www.pexels.com/). Credit to the individual artists: Graeme Travers for Damselfly and Mark A Jenkins for Blue Tit 
   - [Amiresponsive](https://ui.dev/amiresponsive) for the responsivity mockup on the README.
 
-  - the favicon was downloaded from [Flaticon](https://flaticon.com) with credit to the creator iconixar.
+  - [Ignore X frame headers](https://chromewebstore.google.com/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe)
+    was used to download a Chrome extension to allow the resposivity image to be taken
 
-  - the weather icons were taken from [Code explained repository on GitHub](https://github.com/CodeExplainedRepo/Weather-App-JavaScript)
 
 **Acknowledgements**
-  - Amy Richardson - For providing support and resources 
-  - Mark Briscoe - For providing technical knowledge and support with coding and GitHub/GitPod and a tutorial on creating a weather app using an API
+  - Amy Richardson (Facilitator with Code Institute) - For providing support and resources and tirelessly encouraging
+  - Mark Briscoe (SME with Code Institute) - For providing technical knowledge and support with coding and GitHub/GitPod and being constantly 
+    encouraging and positive
+  - John Rearden (Coding coach with Code Institute) - for amazing coding expertise and calm advice
+  - Ruairidh MacArthur (Coding coach with Code Institute) - for amazing coding expertise and calm advice 
